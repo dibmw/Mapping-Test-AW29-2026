@@ -130,7 +130,7 @@ export default function App() {
                 MAPPING TEST
               </h1>
               <p className="text-[10px] md:text-xs text-gray-500 font-medium tracking-wider uppercase leading-none mt-0.5">
-                AL-WILDAN 29 DEPOK
+                AL-WILDAN ISLAMIC SCHOOL 29 DEPOK
               </p>
               <p className="text-[9px] md:text-[10px] text-gray-400 font-semibold tracking-wider uppercase leading-none mt-1">
                 T.A. 2026/2027
