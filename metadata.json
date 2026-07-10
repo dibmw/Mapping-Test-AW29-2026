@@ -1,0 +1,6 @@
+{
+  "name": "Mapping Test Checker",
+  "description": "Sistem pengecekan jadwal Mapping Test dan media informasi ketentuan pelaksanaan ujian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
