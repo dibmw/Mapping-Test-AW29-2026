@@ -157,9 +157,7 @@ export default function App() {
         <section className="text-center space-y-3.5 print:hidden">
           <h2 className="font-display font-extrabold text-2xl md:text-3xl text-gray-900 tracking-tight leading-tight">
             Cek Jadwal{" "}
-            <span className="text-brand-green underline decoration-brand-gold decoration-4 underline-offset-4">
-              Mapping Test
-            </span>{" "}
+            <span className="text-brand-green underline">Mapping Test</span>{" "}
             Siswa
           </h2>
           <p className="text-xs md:text-sm text-gray-500 max-w-md mx-auto leading-relaxed">
