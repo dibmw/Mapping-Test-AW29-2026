@@ -4,16 +4,16 @@
  */
 
 import { useState } from "react";
-import { 
-  BookOpen, 
-  Clock, 
-  Shirt, 
-  Car, 
-  Home, 
-  BookText, 
+import {
+  BookOpen,
+  Clock,
+  Shirt,
+  Car,
+  Home,
+  BookText,
   Award,
   ChevronDown,
-  Info
+  Info,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -31,7 +31,9 @@ export default function KetentuanUjian() {
       icon: Award,
       content: (
         <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-          Mapping test ini dilaksanakan bertujuan untuk mengukur kemampuan awal siswa, yang nantinya akan digunakan sebagai dasar pengelompokan kelas pada saat Kegiatan Belajar Mengajar (KBM) dimulai.
+          Mapping test ini dilaksanakan bertujuan untuk mengukur kemampuan awal
+          siswa, yang nantinya akan digunakan sebagai dasar pengelompokan kelas
+          pada saat Kegiatan Belajar Mengajar (KBM) dimulai.
         </p>
       ),
     },
@@ -41,7 +43,12 @@ export default function KetentuanUjian() {
       icon: Clock,
       content: (
         <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-          Pelaksanaan mapping test dilakukan sesuai dengan jadwal masing-masing siswa, dan siswa <strong className="text-brand-green font-semibold">wajib hadir di sekolah 10 menit sebelum</strong> jadwal ujian berlangsung.
+          Pelaksanaan mapping test dilakukan sesuai dengan jadwal masing-masing
+          siswa, dan siswa{" "}
+          <strong className="text-brand-green font-semibold">
+            wajib hadir di sekolah 10 menit sebelum
+          </strong>{" "}
+          jadwal ujian berlangsung.
         </p>
       ),
     },
@@ -51,7 +58,15 @@ export default function KetentuanUjian() {
       icon: BookOpen,
       content: (
         <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-          Siswa <strong className="text-brand-green font-semibold">tidak perlu membawa alat tulis</strong> karena mapping test ini bersifat <strong className="text-brand-green font-semibold">ujian lisan</strong>.
+          Siswa{" "}
+          <strong className="text-brand-green font-semibold">
+            tidak perlu membawa alat tulis
+          </strong>{" "}
+          karena mapping test ini bersifat{" "}
+          <strong className="text-brand-green font-semibold">
+            ujian lisan
+          </strong>
+          .
         </p>
       ),
     },
@@ -61,7 +76,8 @@ export default function KetentuanUjian() {
       icon: Shirt,
       content: (
         <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-          Siswa wajib mengenakan seragam sekolah sesuai dengan ketentuan yang tercantum dalam surat MPLS (Masa Pengenalan Lingkungan Sekolah).
+          Siswa wajib mengenakan seragam sekolah sesuai dengan ketentuan yang
+          tercantum dalam surat MPLS (Masa Pengenalan Lingkungan Sekolah).
         </p>
       ),
     },
@@ -77,7 +93,8 @@ export default function KetentuanUjian() {
               Jenjang SD
             </h5>
             <p className="text-gray-600 pl-3.5 text-xs md:text-sm">
-              Materi ujian meliputi membaca tulisan bahasa Indonesia, bahasa Inggris, serta huruf Hijaiyah/Iqro/Al-Qur'an.
+              Materi ujian meliputi membaca tulisan bahasa Indonesia, bahasa
+              Inggris, serta huruf Hijaiyah/Iqro/Al-Qur'an.
             </p>
           </div>
           <div className="p-3 bg-brand-gold-soft rounded-lg border border-brand-gold/10">
@@ -86,7 +103,8 @@ export default function KetentuanUjian() {
               Jenjang SMP & SMA
             </h5>
             <p className="text-gray-600 pl-3.5 text-xs md:text-sm">
-              Materi ujian meliputi Al-Qur'an, bahasa Arab (Arabic), dan bahasa Inggris (English).
+              Materi ujian meliputi Al-Qur'an, bahasa Arab (Arabic), dan bahasa
+              Inggris (English).
             </p>
           </div>
         </div>
@@ -94,11 +112,15 @@ export default function KetentuanUjian() {
     },
     {
       id: "dropoff",
-      title: "Ketentuan Pengantaran (Drop Off)",
+      title: "Ketentuan Pengantaran",
       icon: Car,
       content: (
         <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-          Dikarenakan keterbatasan area parkir sekolah, wali murid diimbau untuk <strong className="text-brand-green font-semibold">hanya melakukan drop off (antar-turun)</strong> di sekolah atau dapat memanfaatkan layanan transportasi online.
+          Dikarenakan keterbatasan area parkir sekolah, wali murid diimbau untuk{" "}
+          <strong className="text-brand-green font-semibold">
+            hanya melakukan <i>drop-off</i>
+          </strong>{" "}
+          di sekolah atau dapat memanfaatkan layanan transportasi online.
         </p>
       ),
     },
@@ -108,14 +130,22 @@ export default function KetentuanUjian() {
       icon: Home,
       content: (
         <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-          Setelah menyelesaikan seluruh rangkaian mapping test, siswa diperkenankan untuk <strong className="text-brand-green font-semibold">langsung pulang</strong> ke rumah masing-masing.
+          Setelah menyelesaikan seluruh rangkaian mapping test, siswa
+          diperkenankan untuk{" "}
+          <strong className="text-brand-green font-semibold">
+            langsung pulang
+          </strong>{" "}
+          ke rumah masing-masing.
         </p>
       ),
     },
   ];
 
   return (
-    <div id="ketentuan-pelaksanaan" className="w-full bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+    <div
+      id="ketentuan-pelaksanaan"
+      className="w-full bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden"
+    >
       {/* Section Header */}
       <div className="bg-gradient-to-r from-brand-green to-brand-green-dark p-5 md:p-6 text-white flex items-center gap-3">
         <div className="p-2 bg-white/10 rounded-lg">
@@ -141,11 +171,11 @@ export default function KetentuanUjian() {
           const isOpen = openSection === sec.id;
 
           return (
-            <div 
+            <div
               key={sec.id}
               className={`border rounded-xl transition-all duration-200 overflow-hidden ${
-                isOpen 
-                  ? "border-brand-green bg-brand-green-soft/30 shadow-sm" 
+                isOpen
+                  ? "border-brand-green bg-brand-green-soft/30 shadow-sm"
                   : "border-gray-100 hover:border-brand-green/30 hover:bg-gray-50/50"
               }`}
             >
@@ -156,20 +186,28 @@ export default function KetentuanUjian() {
                 className="w-full px-4 py-4 flex items-center justify-between text-left focus:outline-none transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <div className={`p-2 rounded-lg transition-colors duration-200 ${
-                    isOpen ? "bg-brand-green text-white" : "bg-gray-100 text-gray-500"
-                  }`}>
+                  <div
+                    className={`p-2 rounded-lg transition-colors duration-200 ${
+                      isOpen
+                        ? "bg-brand-green text-white"
+                        : "bg-gray-100 text-gray-500"
+                    }`}
+                  >
                     <IconComponent className="w-5 h-5" />
                   </div>
-                  <span className={`font-display font-semibold text-sm md:text-base transition-colors duration-200 ${
-                    isOpen ? "text-brand-green-dark" : "text-gray-800"
-                  }`}>
+                  <span
+                    className={`font-display font-semibold text-sm md:text-base transition-colors duration-200 ${
+                      isOpen ? "text-brand-green-dark" : "text-gray-800"
+                    }`}
+                  >
                     {sec.title}
                   </span>
                 </div>
-                <ChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${
-                  isOpen ? "transform rotate-180 text-brand-green" : ""
-                }`} />
+                <ChevronDown
+                  className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${
+                    isOpen ? "transform rotate-180 text-brand-green" : ""
+                  }`}
+                />
               </button>
 
               {/* Accordion Content */}
