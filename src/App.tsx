@@ -303,8 +303,9 @@ export default function App() {
               Butuh Bantuan Lain?
             </h4>
             <p className="text-xs text-gray-500 max-w-sm leading-relaxed">
-              Jika Abu/Ummu membutuhkan informasi lebih lanjut, Insya Allah
-              dapat menghubungi wali kelas ananda.
+              Jika Abu/Ummu mendapati kendala seperti nama ananda tidak ada atau
+              membutuhkan informasi lebih lanjut, Insya Allah dapat menghubungi
+              wali kelas ananda.
             </p>
           </div>
         </section>
