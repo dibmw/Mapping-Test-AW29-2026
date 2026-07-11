@@ -20,6 +20,7 @@ import {
   Search,
   BookOpen,
   Sparkles,
+  HelpCircle,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -130,7 +131,7 @@ export default function App() {
                 MAPPING TEST
               </h1>
               <p className="text-[10px] md:text-xs text-gray-500 font-medium tracking-wider uppercase leading-none mt-0.5">
-                AL-WILDAN ISLAMIC SCHOOL 29 DEPOK
+                AL-WILDAN 29 DEPOK
               </p>
               <p className="text-[9px] md:text-[10px] text-gray-400 font-semibold tracking-wider uppercase leading-none mt-1">
                 T.A. 2026/2027
@@ -156,7 +157,10 @@ export default function App() {
         {/* HERO SECTION / INTRO */}
         <section className="text-center space-y-3.5 print:hidden">
           <h2 className="font-display font-extrabold text-2xl md:text-3xl text-gray-900 tracking-tight leading-tight">
-            Cek Jadwal <span className="text-brand-green">Mapping Test</span>{" "}
+            Cek Jadwal{" "}
+            <span className="text-brand-green underline decoration-brand-gold decoration-4 underline-offset-4">
+              Mapping Test
+            </span>{" "}
             Siswa
           </h2>
           <p className="text-xs md:text-sm text-gray-500 max-w-md mx-auto leading-relaxed">
@@ -297,12 +301,15 @@ export default function App() {
         </section>
 
         {/* HELPER BOX FOR QUICK CONTACT */}
-        <section className="bg-brand-gold-soft border border-brand-gold/10 p-5 rounded-2xl flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between print:hidden">
+        <section className="bg-brand-gold-soft/50 border border-brand-gold/20 p-5 rounded-2xl flex items-start gap-4 print:hidden">
+          <div className="p-2.5 bg-brand-gold/10 text-brand-gold-dark rounded-xl shrink-0">
+            <HelpCircle className="w-5 h-5" />
+          </div>
           <div className="space-y-1">
-            <h4 className="font-display font-bold text-brand-gold-dark text-sm md:text-base flex items-center gap-1.5">
+            <h4 className="font-display font-bold text-brand-gold-dark text-sm md:text-base">
               Butuh Bantuan Lain?
             </h4>
-            <p className="text-xs text-gray-500 max-w-sm leading-relaxed">
+            <p className="text-xs text-gray-600 leading-relaxed font-sans">
               Jika Abu/Ummu mendapati kendala seperti nama ananda tidak ada atau
               membutuhkan informasi lebih lanjut, Insya Allah dapat menghubungi
               wali kelas ananda.
