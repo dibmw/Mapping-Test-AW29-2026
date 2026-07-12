@@ -117,7 +117,7 @@ Wajib hadir 10 menit sebelum waktu ujian dimulai.
         <div className="p-6 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Day / Date */}
-            <div className="flex items-start gap-3.5 p-3 rounded-xl hover:bg-gray-50/50 transition-colors">
+            <div className="flex items-center gap-3.5 p-3 rounded-xl hover:bg-gray-50/50 transition-colors">
               <div className="p-2.5 bg-brand-green/5 text-brand-green rounded-xl shrink-0">
                 <Calendar className="w-5 h-5" />
               </div>
@@ -132,7 +132,7 @@ Wajib hadir 10 menit sebelum waktu ujian dimulai.
             </div>
 
             {/* Room */}
-            <div className="flex items-start gap-3.5 p-3 rounded-xl hover:bg-gray-50/50 transition-colors">
+            <div className="flex items-center gap-3.5 p-3 rounded-xl hover:bg-gray-50/50 transition-colors">
               <div className="p-2.5 bg-brand-green/5 text-brand-green rounded-xl shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
