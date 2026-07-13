@@ -14,7 +14,11 @@ interface SiswaSearchProps {
   selectedSiswa: SiswaSchedule | null;
 }
 
-export default function SiswaSearch({ schedules, onSelectSiswa, selectedSiswa }: SiswaSearchProps) {
+export default function SiswaSearch({
+  schedules,
+  onSelectSiswa,
+  selectedSiswa,
+}: SiswaSearchProps) {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<SiswaSchedule[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -34,7 +38,10 @@ export default function SiswaSearch({ schedules, onSelectSiswa, selectedSiswa }:
   // Handle outside click to hide suggestions
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target as Node)
+      ) {
         setShowSuggestions(false);
       }
     }
@@ -53,9 +60,8 @@ export default function SiswaSearch({ schedules, onSelectSiswa, selectedSiswa }:
     }
 
     // Search by name only
-    const filtered = schedules.filter(
-      (s) =>
-        s.namaSiswa.toLowerCase().includes(trimmed)
+    const filtered = schedules.filter((s) =>
+      s.namaSiswa.toLowerCase().includes(trimmed),
     );
 
     // Limit to 8 suggestions for performance and UI layout density
@@ -87,7 +93,7 @@ export default function SiswaSearch({ schedules, onSelectSiswa, selectedSiswa }:
     const match = schedules.find(
       (s) =>
         s.namaSiswa.toLowerCase() === trimmed ||
-        s.namaSiswa.toLowerCase().includes(trimmed)
+        s.namaSiswa.toLowerCase().includes(trimmed),
     );
 
     if (match) {
@@ -115,7 +121,7 @@ export default function SiswaSearch({ schedules, onSelectSiswa, selectedSiswa }:
           <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
             <Search className="w-5 h-5 text-brand-green/70" />
           </div>
-          
+
           <input
             type="text"
             value={query}
@@ -166,6 +172,9 @@ export default function SiswaSearch({ schedules, onSelectSiswa, selectedSiswa }:
                     <span className="font-display font-semibold text-sm text-gray-800 group-hover:text-brand-green transition-colors uppercase">
                       {item.namaSiswa}
                     </span>
+                    <span className="font-sans text-xs text-gray-400 mt-0.5">
+                      NIS: {item.nis}
+                    </span>
                   </div>
                   <div className="flex items-center gap-2 shrink-0">
                     <span className="text-xs bg-brand-green/10 text-brand-green font-semibold px-2 py-0.5 rounded-full">
@@ -197,8 +206,10 @@ export default function SiswaSearch({ schedules, onSelectSiswa, selectedSiswa }:
                 Data Tidak Ditemukan
               </h4>
               <p className="text-xs text-red-600 leading-relaxed">
-                Maaf, jadwal untuk nama siswa <span className="font-semibold">"{query}"</span> tidak ditemukan. 
-                Pastikan ejaan nama yang Anda masukkan sudah benar, atau cari menggunakan beberapa huruf dari nama siswa.
+                Maaf, jadwal untuk nama siswa{" "}
+                <span className="font-semibold">"{query}"</span> tidak
+                ditemukan. Pastikan ejaan nama yang Anda masukkan sudah benar,
+                atau cari menggunakan beberapa huruf dari nama siswa.
               </p>
             </div>
           </motion.div>
