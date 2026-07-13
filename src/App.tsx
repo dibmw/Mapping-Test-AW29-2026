@@ -239,9 +239,9 @@ export default function App() {
                       <Search className="w-3.5 h-3.5 text-brand-green" />
                       PENCARIAN JADWAL
                     </span>
-                    <span className="text-[10px] bg-brand-green/10 text-brand-green font-medium px-2 py-0.5 rounded-full">
+                    {/* <span className="text-[10px] bg-brand-green/10 text-brand-green font-medium px-2 py-0.5 rounded-full">
                       {stats.totalSiswa} Siswa Terdaftar
-                    </span>
+                    </span> */}
                   </div>
 
                   <SiswaSearch
